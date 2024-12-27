@@ -1,0 +1,128 @@
+.profile {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: 'Roboto', sans-serif;
+  color: #2c3e50;
+  background-color: #b1e7b3;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .profile-header {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    .profile-username {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #34495e;
+    }
+
+    .profile-bio {
+      font-size: 1.2rem;
+      color: #7f8c8d;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .profile-posts {
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #34495e;
+    }
+
+    .posts-list {
+      list-style: none;
+      padding: 0;
+
+      .post-item {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid #bdc3c7;
+        border-radius: 8px;
+        background-color: #ffffff;
+        transition: transform 0.2s, box-shadow 0.2s;
+
+        &:hover {
+          transform: scale(1.02);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-header {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          margin-bottom: 1rem;
+          cursor: pointer;
+
+          .post-author {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2c3e50;
+          }
+
+          .post-author-username {
+            font-size: 1rem;
+            color: #95a5a6;
+          }
+        }
+
+        .post-content {
+          font-size: 1.1rem;
+          color: #2c3e50;
+          margin-bottom: 1rem;
+        }
+
+        .post-info {
+          font-size: 1rem;
+          color: #7f8c8d;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .post-likes {
+            color: #e74c3c;
+            font-weight: bold;
+          }
+
+          .like-button {
+            background-color: #3498db;
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+              background-color: #2980b9;
+            }
+
+            &.liked {
+              background-color: #e74c3c;
+            }
+          }
+
+          .post-created-at {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    .no-posts {
+      font-size: 1.2rem;
+      color: #95a5a6;
+      text-align: center;
+    }
+  }
+
+  .loading {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #95a5a6;
+  }
+}
