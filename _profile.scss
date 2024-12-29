@@ -1,0 +1,111 @@
+.profile {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-username {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.profile-bio {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.profile-posts {
+  margin-top: 2rem;
+}
+
+.posts-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-item {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.post-author {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.post-author-username {
+  font-size: 1rem;
+  color: #888;
+}
+
+.post-content {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.post-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.post-likes,
+.post-liked,
+.post-created-at {
+  margin-right: 1rem;
+}
+
+.no-posts {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #888;
+}
+
+.error {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.error-message {
+  font-size: 1.5rem;
+  color: red;
+}
+
+.icon {
+  vertical-align: middle;
+  margin-right: 8px;
+  font-size: 1.2rem; /* Розмір іконки */
+}
+
+li {
+  list-style-type: none;
+}
